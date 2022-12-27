@@ -6,18 +6,18 @@ import { Contacto } from '../models/contact.class';
 const CompBFun = ({ contact }) => {
     return (
         <div>
-            <h2>
+            <h5>
                 Nombre: { contact.nombre }
-            </h2>
-            <h2>
+            </h5>
+            <h5>
                 Apellidos: { contact.apellidos }
-            </h2>
-            <h2>
+            </h5>
+            <h5>
                 email: { contact.email }
-            </h2>
-            <h2>
-                Conectado: { contact.completado ? "Contacto en Línea":"Contacto No Disponible"}
-            </h2>
+            </h5>
+            <h5>
+                Conectado: { contact.conectado ? "Contacto en Línea":"Contacto No Disponible" }
+            </h5>
         </div>
     );
 };
